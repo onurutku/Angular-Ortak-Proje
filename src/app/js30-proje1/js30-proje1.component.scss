@@ -1,0 +1,30 @@
+.section {
+  height: 95vh;
+  background: url(../../assets/JS30-1.Proje/background.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  margin-left: 15px;
+  padding: 10px 14px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  background: rgba($color: #000000, $alpha: 0.5);
+  border: 3px solid black;
+  border-radius: 5px;
+}
+.btn:active {
+  transform: translateY(5px);
+}
+.effect {
+  transform: translateY(5px);
+}
+
+p {
+  color: #ffa500;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  margin: 0;
+}
