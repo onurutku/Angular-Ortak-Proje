@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.image{
+  --border:0;
+  --blur:0;
+  --border-color:#000;
+  width: 80%;
+  height: auto;
+  border: var(--border) solid var(--border-color);
+  filter: blur(var(--blur));
+}
+.controls {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.input-control{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 1.5rem;
+}
