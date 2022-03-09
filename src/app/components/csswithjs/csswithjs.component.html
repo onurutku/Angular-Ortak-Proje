@@ -1,0 +1,41 @@
+<div class="container">
+  <h1>Update CSS Variables with <span>JS</span></h1>
+
+  <div class="controls">
+    <div class="input-control">
+      <label for="spacing">Spacing:</label>
+      <input
+        type="range"
+        name="spacing"
+        min="{{ min }}"
+        max="{{ max }}"
+        value="0"
+        [(ngModel)]="spacing"
+      />
+    </div>
+    <div class="input-control">
+      <label for="blur">Blur:</label>
+      <input
+        type="range"
+        id="blur"
+        min="{{ minBlur }}"
+        max="{{ maxBlur }}"
+        value="0"
+        [(ngModel)]="blur"
+      />
+    </div>
+    <div class="input-control">
+      <label for="base">Base Color:</label>
+      <input type="color" value="#000" [(ngModel)]="color" />
+    </div>
+  </div>
+
+  <img
+    [style.--border.px]="spacing"
+    [style.--blur.px]="blur"
+    [style.--border-color]="color"
+    class="image"
+    src="https://picsum.photos/600/400"
+    alt="image"
+  />
+</div>
